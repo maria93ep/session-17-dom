@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creare element cu ID buton si backgroundColor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+    var elementDiv = document.createElement("div"); 
+    elementDiv.id = "elementMeu";
+    elementDiv.innerHTML = "This is my exemple!";
+   document.body.appendChild(elementDiv);
+elementDiv.addEventListener("click", function() {
+    elementDiv.style.backgroundColor = "blue";
+});
+
+
+var element2 = document.createElement("div2"); 
+    element2.id = "elementMeu2";
+    element2.innerHTML = "This is my 2 exemple!";
+   document.body.appendChild(element2);
+element2.addEventListener("mouseover", function() {
+    element2.classList.add ("highlighted");
+});
+element.addEventListener("mouseout", function() {
+        element2.classList.remove("highlighted");
+    });
+ </script>
+</body>
